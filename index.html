@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Decodificador</title>
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <img class="cabecalho" src="img/logo_alura.png" alt="Logo Alura">
+        </nav>
+    </header>
+
+    <main class="tela">
+        <div class="conteudo">
+            <section class="txt-input">
+                <textarea name="texto" id="txt" placeholder="Digite seu texto" maxlength="400" required></textarea>
+                <br><br>  
+                <div class="mensagem-alerta">
+                    <img src="img/aviso.png" alt="exclamação de alerta">
+                    <p>Apenas letras minúsculas, sem acento ou caracter especial.</p>
+                </div>
+                <div class="btn">
+                    <button class="btn-cript" onclick="criptografar()">Criptografar</button>
+                    <br><br>
+                    <button class="btn-descript" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </section>
+        </div>
+
+        <div id="txt-output">
+            <div id="imagem-output">
+                <img src="img/imagem.png" alt="Imagem menina com uma lupa">
+                <p><strong>Nenhuma mensagem encontrada!</strong></p>
+                <p>Digite um texto.</p>
+            </div>
+        </div>
+    
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Camila Amaral</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
